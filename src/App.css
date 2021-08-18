@@ -22,7 +22,13 @@ h5 {
   --yellow: #febd59;
   --green: #329e5e;
 }
-
+.otp-field::-webkit-inner-spin-button, 
+.otp-field::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
 img {
   max-width: 100%;
 }
