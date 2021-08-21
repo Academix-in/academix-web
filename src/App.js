@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './components/Footer'
@@ -24,10 +24,10 @@ function App() {
           <Route path="/interests" exact>
             <Interests />
           </Route>
-          <Route path="/dashboard" exact>
+          <Route path="/dashboard/:interestName" exact>
             <Dashboard />
           </Route>
-          <Route path="/video" >
+          <Route path="/video/:interestName/:videoID" >
             <Video />
           </Route>
           <NotFound />
